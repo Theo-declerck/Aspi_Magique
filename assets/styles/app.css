@@ -33,6 +33,10 @@ body {
     transform: scale(110%);
     cursor: pointer;
 }
+#gauche{
+    background-color: transparent;
+    border: none;
+}
 #millieu{
     font-family:'EDO';
     color:#94DAE1;
@@ -53,7 +57,6 @@ body {
 
 #user {
     height: 7vh;
-    margin-top: 1.5vh;
 }
 
 #user:hover {
@@ -84,3 +87,51 @@ video {
     height: 100%;
     width: 100%;
 }
+
+/* Burger-menu */
+.vertical-menu {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;     
+    top: 0;
+    left: -250px;
+    background-color: #FDFEE9;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    
+
+  }
+
+  .vertical-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #c9c3c3;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .vertical-menu a:hover {
+    color: #111;
+  }
+
+  .vertical-menu a {
+    color: #94DAE1;
+    list-style-type: none;
+    padding: 0;
+    margin: 15px;
+  }
+  
+  .vertical-menu.active {
+    left: 0;
+    box-shadow: 10px 0px 10px black;
+  }
+
+  .vertical-menu .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  /* Fin menu */
