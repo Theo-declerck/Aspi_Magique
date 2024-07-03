@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'EDO';
-    src:url('../Font/EDO/edo.ttf') format('truetype');
+    src: url('../Font/EDO/edo.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -33,13 +33,15 @@ body {
     transform: scale(110%);
     cursor: pointer;
 }
-#gauche{
+
+#gauche {
     background-color: transparent;
     border: none;
 }
-#millieu{
-    font-family:'EDO';
-    color:#94DAE1;
+
+#millieu {
+    font-family: 'EDO';
+    color: #94DAE1;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -62,8 +64,9 @@ body {
 #user:hover {
     transform: scale(110%);
     cursor: pointer;
-    fill: #94DAE1;
+   
 }
+
 #user .svg-path {
     fill: #c9e265;
     transition: fill 0.3s;
@@ -93,45 +96,230 @@ video {
     height: 100%;
     width: 250px;
     position: fixed;
-    z-index: 1;     
+    z-index: 1;
     top: 0;
     left: -250px;
     background-color: #FDFEE9;
     padding-top: 60px;
     transition: left 0.5s ease;
-    
+}
 
-  }
-
-  .vertical-menu a {
+.vertical-menu a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #c9c3c3;
     display: block;
     transition: 0.3s;
-  }
+}
 
-  .vertical-menu a:hover {
+.vertical-menu a:hover {
     color: #111;
-  }
+}
 
-  .vertical-menu a {
+.vertical-menu a {
     color: #94DAE1;
     list-style-type: none;
     padding: 0;
     margin: 15px;
-  }
-  
-  .vertical-menu.active {
+}
+
+.vertical-menu.active {
     left: 0;
     box-shadow: 10px 0px 10px black;
-  }
+}
 
-  .vertical-menu .close {
+.vertical-menu .close {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
-  }
-  /* Fin menu */
+}
+/* Fin menu */
+
+.canape {
+    margin-top: 105vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    background-color: #FDFEE9;
+    z-index: 1;
+    font-family: 'EDO';
+    font-size: 25px;
+    color: #94DAE1;
+}
+.tapis {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    background-color: #FDFEE9;
+    z-index: 1;
+    font-family: 'EDO';
+    font-size: 25px;
+    color: #94DAE1;
+}
+
+.matelas {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    background-color: #FDFEE9;
+    z-index: 1;
+    font-family: 'EDO';
+    font-size: 25px;
+    color: #94DAE1;
+}
+
+.photo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carrousel{
+    height: 5vh;
+    width: 5vh;
+    background-color: transparent;
+    border: none;
+}
+.carrousel:hover{
+   transform: scale(110%);
+}
+
+#photocomm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo{
+    height: 30vh;
+    width: 30vh;
+}
+
+.connexion{
+    top: 20vh;
+    left: 70vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    background-color: #90918B ;
+    color: #94DAE1;
+    width: 60vh;
+    height: 50vh;
+    font-size: 30px;
+    border-radius: 30px;
+}
+.titre{
+    margin-top: -5vh;
+    color: white;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+#loginName{
+   display: flex;
+   text-align: center;
+
+    margin-bottom: 5vh;
+    width: 40vh;
+    height: 5vh;
+    border-radius: 20px;
+    border: none;
+    background-color: #c9e265;
+    color: black;
+    font-size: 20px;
+}
+
+.mdp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+
+#password{
+    display: flex;
+    text-align: center;
+    width: 40vh;
+    height: 5vh;
+    border-radius: 20px;
+    border: none;
+    background-color: #c9e265;
+    color: black;
+    font-size: 20px;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}
+#co{
+    background-color: green;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    padding: 7px;
+    color: white;
+}
+#co:hover{
+    transform: scale(110%);
+}
+
+.fdp{
+    text-decoration: underline;
+    color: white;
+    font-size: 15px;
+}
+.hidden{
+    display: none !important;
+}
+
+.back{
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: black;
+    z-index: 4;
+    opacity: 70%;
+    height: 100%;
+    width: 100%;
+}
+
+.scrollx{
+    overflow: hidden;
+}
+
+.closeco{
+    position: relative;
+    border: none;
+    background-color: transparent;
+    height: 50px;
+    margin-top: -2vh;
+    margin-left: 55vh;
+}
+#closed{
+    height: 30px;
+}
+#closed:hover{
+    transform: scale(130%);
+}

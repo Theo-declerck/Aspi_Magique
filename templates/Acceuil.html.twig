@@ -1,21 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-        {% block stylesheets %}
-        {% endblock %}
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Welcome!
+			{% endblock %}
+		</title>
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>"> {% block stylesheets %}{% endblock %}{% block javascripts %}{% endblock %}
+		{% include "base.html.twig" %}
+	</head>
+	<body>
+		{% block body %}
+			<video autoplay loop muted src="{{asset('Image/video.mp4')}}"></video>
+			<div class="darker"></div>
+			<section class="canape">
+				<h1>Canapé</h1>
+				<div class="photo">
+					<button class="carrousel" type="button"><img src="{{ asset('Image/chevron-left.svg') }}"></button>
+					<div id="photocomm">
+                    <img id="photo" src="{{ asset('Image/photo1.jpg') }}">
+                    <p id="comm">Commentaire photo 1></p>
+                    </div>
+					<div id="photocomm">
+                    <img id="photo" src="{{ asset('Image/photo2.jpg') }}">
+                    <p id="comm">Commentaire photo 2</p>
+                    </div>
+					<div id="photocomm">
+                    <img id="photo" src="{{ asset('Image/photo3.jpg') }}">
+                    <p id="comm">Commentaire photo 3</p>
+                    </div>
+					<button class="carrousel" type="button"><img src="{{ asset('Image/chevron-right.svg') }}"></button>
+				</div>
+			</section>
 
-        {% block javascripts %}
-
-        {% endblock %}
-        {% include "base.html.twig" %}
-    </head>
-    <body>
-        {% block body %}
-         <video autoplay loop muted src="{{asset('Image/video.mp4')}}"></video>
-        <div class="darker"></div>      
-          {% endblock %}
-    </body>
+            <section class="tapis">
+				<h1>Tapis</h1>
+				<div class="photo">
+					<button class="carrousel" type="button"><img src="{{ asset('Image/chevron-left.svg') }}"></button>
+					<div id="photocomm">
+                    <img id="photo" src="{{ asset('Image/photo1.jpg') }}">
+                    <p id="comm">Commentaire photo 1></p>
+                    </div>
+					<div id="photocomm">
+                    <img id="photo" src="{{ asset('Image/photo2.jpg') }}">
+                    <p id="comm">Commentaire photo 2</p>
+                    </div>
+					<div id="photocomm">
+                    <img id="photo" src="{{ asset('Image/photo3.jpg') }}">
+                    <p id="comm">Commentaire photo 3</p>
+                    </div>
+					<button class="carrousel" type="button"><img src="{{ asset('Image/chevron-right.svg') }}"></button>
+				</div>
+			</section>
+            <section class="matelas">
+				<h1>Matelas</h1>
+				<div class="photo">
+					<button class="carrousel" type="button"><img src="{{ asset('Image/chevron-left.svg') }}"></button>
+					<div id="photocomm">
+                    <img id="photo" src="{{ asset('Image/photo1.jpg') }}">
+                    <p id="comm">Commentaire photo 1></p>
+                    </div>
+					<div id="photocomm">
+                    <img id="photo" src="{{ asset('Image/photo2.jpg') }}">
+                    <p id="comm">Commentaire photo 2</p>
+                    </div>
+					<div id="photocomm">
+                    <img id="photo" src="{{ asset('Image/photo3.jpg') }}">
+                    <p id="comm">Commentaire photo 3</p>
+                    </div>
+					<button class="carrousel" type="button"><img src="{{ asset('Image/chevron-right.svg') }}"></button>
+				</div>
+			</section>
+		{% endblock %}
+	</body>
 </html>
