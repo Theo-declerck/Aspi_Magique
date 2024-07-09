@@ -12,8 +12,8 @@
 			<div class="header">
 				<div class="vertical-menu" id="sbm">
 					<a href="#" class="close" id="closebtn" type="button">x</a>
-					<a href="#" class="active">Accueil</a>
-					<a href="#">Devis</a>
+					<a href="{{ path('acceuil') }}" class="active">Accueil</a>
+					<a href="{{ path('devis') }}">Devis</a>
 					<a href="#">Commentaire</a>
 					<a href="#">Contact</a>
 				</div>
@@ -45,7 +45,7 @@
 				<div class="login"><input id="co"  type="submit" value="Se connecter"></div>		
 				
 			</form>
-			<p class="fdp"><a>Mot de passe oublié ?</a></p>
+			{# <p class="fdp"><a>Mot de passe oublié ?</a></p> #}
 			</div>
 		{% endblock %}
 
