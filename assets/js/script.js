@@ -36,3 +36,59 @@ function fermer(){
 user.addEventListener("click",connexion);
 fer.addEventListener("click",fermer);
 // Apparition de la modal connexion //
+
+// Choix des biens //
+function choixbien(){
+    var select = document.querySelector("#selection1").value;
+    var canap =document.querySelector(".canap")
+    var nbplace = document.querySelector(".nbplace")
+    switch (select) {
+        case 'canape':
+            if (nbplace.classList.contains("hidden")){
+
+            }else{
+                nbplace.classList.add("hidden")
+            }
+            canap.classList.remove("hidden")
+            
+            break;
+        case 'matelas':
+            if (canap.classList.contains("hidden")){
+
+            }else{
+                canap.classList.add("hidden")
+            }
+            nbplace.classList.remove("hidden")
+            break;
+        case 'tapis':
+            console.log("Tapis pas encore disponoble")
+            break;
+        default:
+            console.log("Veuillez sélectionner un bien...");
+    }
+}
+
+function choixplace() {
+    var selection2 = document.querySelector("#selection2").value
+    var p1 = document.querySelector(".p1");
+    var p2 = document.querySelector(".p2");
+
+    switch (selection2) {
+        case 'un':
+            if (!p2.classList.contains("hidden")) {
+                p2.classList.add("hidden");
+            }
+            p1.classList.remove("hidden");
+            break;
+        case 'deux':
+            if (!p1.classList.contains("hidden")) {
+                p1.classList.add("hidden");
+            }
+            p2.classList.remove("hidden");
+            break;
+        default:
+            console.log(selection2);
+    }
+}
+
+// Choix des biens //

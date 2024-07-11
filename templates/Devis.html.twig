@@ -13,12 +13,54 @@
 				<section class="main">
 					<div class="selecbien">
 						<h2>Bien a nettoyer</h2>
-						<select  id="selection1">
-							<option>Veuillez sélectionner un bien...</option>
-							<option>Canapé</option>
-							<option>Tapis</option>
-							<option>Matelas</option>
+						<select  id="selection1" onChange="choixbien()">
+							<option value="canape">Canapé</option>
+							<option value="matelas">Matelas</option>
+							<option value="tapis">Tapis</option>
 						</select>
+						{# select en fonction du choix #}
+						<div class="changement canap hidden">
+							<h2 id="place">Nombre de place</h2>
+							<select id="selectioncanap" name="canapeselec">
+							<option value="25€">1 Place</option>
+							<option value="40€">2 Place</option>
+							<option value="50€">3 Place</option>
+							<option value="60€">4 Place</option>
+							<option value="70€">5 Place</option>
+							<option value="90€">Convertible</option>
+							</select>
+						</div>
+						<div class="changement nbplace hidden" onChange="choixplace()">
+							<h2 id="nbplace">Nombre de face a nettoyer</h2>
+							<select id="selection2">
+								<option value="un">1 Face</option>
+								<option value="deux">2 Face</option>
+						</select>
+						</div>
+						<div class="changement p1 hidden ">
+							<h2 id="p1">Taille de votre matelas</h2>
+							<select id="selectionplace1" name="canapeselec">
+							<option value="20€">Matelas pour bébé</option>
+							<option value="30€">Matelas 1 personne</option>
+							<option value="40€">Matelas 2 personne</option>
+							<option value="45€">Matelas King size 180x200</option>
+							<option value="50€">Matelas King size 200x200</option>
+							<option value="60€">Matelas King size 240x240</option>
+							</select>
+						</div>
+						<div class="changement p2 hidden ">
+							<h2 id="p2">Taille de votre matelas</h2>
+							<select id="selectionplace2" name="canapeselec">
+							<option value="25€">Matelas pour bébé</option>
+							<option value="37€">Matelas 1 personne</option>
+							<option value="50€">Matelas 2 personne</option>
+							<option value="60€">Matelas King size 180x200</option>
+							<option value="65€">Matelas King size 200x200</option>
+							<option value="70€">Matelas King size 240x240</option>
+							</select>
+						</div>
+						{# selecet en fonction du choix #}
+						<button type="button" class="btnvalider">Valider</button>
 					</div>
 				</section>
 			</div>
