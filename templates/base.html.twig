@@ -15,11 +15,11 @@
 					<a href="{{ path('acceuil') }}" class="active">Accueil</a>
 					<a href="{{ path('devis') }}">Devis</a>
 					<a href="#">Commentaire</a>
-					<a href="#">Contact</a>
+					<a href="{{ path('contact')}}">Contact</a>
 				</div>
 				<button id="gauche" class="btn" type="button">
 					<img src="{{ asset('Image/burger-menu.svg') }}" id="Burger">
-                </button>
+				</button>
 				<article id="millieu">L'aspi Magique
 					<img class="logo" src="{{ asset('Image/Logo.jpg')}}" alt=""></article>
 				<article id="droite">
@@ -30,28 +30,29 @@
 			</div>
 			<div class="back hidden"></div>
 			<div class="hidden connexion">
-			<button class="closeco" type="button"><img src="{{ asset('Image/x.svg') }}" id="closed"></button>
-				<h2 class="titre">Connexion</h2>	
+				<button class="closeco" type="button"><img src="{{ asset('Image/x.svg') }}" id="closed"></button>
+				<h2 class="titre">Connexion</h2>
 				<form method="POST">
 					<div class="email">
 						<label for="loginName">Email</label>
 						<input id="loginName" type="text" name="loginName">
 					</div>
-			
+
 					<div class="mdp">
 						<label for="password">Mot de Passe</label>
 						<input id="password" type="password" name="password">
-					</div>				
-				<div class="login"><input id="co"  type="submit" value="Se connecter"></div>		
+					</div>
+					<div class="login"><input id="co" type="submit" value="Se connecter"></div>
+
+				</form>
 				
-			</form>
-			{# <p class="fdp"><a>Mot de passe oublié ?</a></p> #}
 			</div>
+			
 		{% endblock %}
 
 
-        {% block javascripts %}
-        <script src="{{ asset('js/script.js') }}"></script>
+		{% block javascripts %}
+			<script src="{{ asset('js/script.js') }}"></script>
 		{% endblock %}
 	</body>
 </html>
