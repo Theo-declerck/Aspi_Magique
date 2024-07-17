@@ -390,6 +390,31 @@ video {
     border-radius: 2vh;
 }
 
+.double {
+    display: flex;
+    flex-direction: row;
+}
+
+.cart {
+    border: none;
+    border-radius: 2vh;
+    background-color: #D9D9D9;
+    font-family: 'Roboto';
+    margin-left: 2vh;
+    height: fit-content;
+    font-size: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+.btnremove {
+   background-color: red;
+   color: white;
+   font-size: 1.5vh;
+   border: none;
+   border-radius: 2vh;
+   padding: 0.8vh;
+}
 
 .selecbien {
     display: flex;
@@ -438,8 +463,19 @@ select {
     text-align: center;
     width: 22vh;
 }
-
-.btnvalider {
+.btnvalider{
+    height: 3vh;
+    width: 10vh;
+    color: white;
+    background-color: green;
+    position: absolute;
+    padding: 0.5vh;
+    font-family: 'Roboto';
+    font-size: 2vh;
+    border: transparent;
+    border-radius: 2vh;
+}
+.btnajout {
     height: 4vh;
     width: 12vh;
     color: white;
@@ -453,7 +489,14 @@ select {
     border-radius: 2vh;
 }
 
+.btnvalider:hover {
+    transform: scale(110%);
+}
+
+
 /* Devis */
+/* ------ */
+/* ------ */
 /* Contact */
 
 #contacttitre {
@@ -464,7 +507,7 @@ select {
     color: #94DAE1;
 }
 
-.contactblock {
+.blockcontact {
     margin-top: 25vh;
     display: flex;
     width: 100%;
@@ -472,5 +515,27 @@ select {
 
 }
 
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3EEE8;
+    padding: 2vh;
+    border: none;
+    border-radius: 2vh;
+
+}
+
+.contactlogo {
+    height: 10vh;
+
+}
+
+.blocktext {
+    font-family: 'Roboto';
+    font-size: 3vh;
+    margin-top: 3vh;
+}
 
 /* Contact */

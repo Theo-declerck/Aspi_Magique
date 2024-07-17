@@ -12,7 +12,20 @@
 	<body>
 		{% block body %}
 			<p id="contacttitre">Contactez-nous</p>
-			
+			<div class="blockcontact">
+				<article class="block tel">
+					<img src="{{asset('Image/phone.svg')}}" class="contactlogo">
+					<p class="blocktext">06.25.90.72.81</p>
+				</article>
+				<article class="block mail">
+					<img src="{{asset('Image/at.svg')}}" class="contactlogo">
+					<p class="blocktext">aspimagique@gmail.com</p>
+				</article>
+				<article class="block reseaux">
+					<img src="{{asset('Image/facebook.svg')}}" class="contactlogo">
+					<p class="blocktext">L'aspi Magique</p>
+				</article>
+			</div>
 		{% endblock %}
 	</body>
 </html></body></html>
